@@ -1,0 +1,13 @@
+/home/luis/dev/Mercearia/bin/Debug/netcoreapp3.1/Mercearia
+/home/luis/dev/Mercearia/bin/Debug/netcoreapp3.1/Mercearia.deps.json
+/home/luis/dev/Mercearia/bin/Debug/netcoreapp3.1/Mercearia.runtimeconfig.json
+/home/luis/dev/Mercearia/bin/Debug/netcoreapp3.1/Mercearia.runtimeconfig.dev.json
+/home/luis/dev/Mercearia/bin/Debug/netcoreapp3.1/Mercearia.dll
+/home/luis/dev/Mercearia/bin/Debug/netcoreapp3.1/Mercearia.pdb
+/home/luis/dev/Mercearia/obj/Debug/netcoreapp3.1/Mercearia.csprojAssemblyReference.cache
+/home/luis/dev/Mercearia/obj/Debug/netcoreapp3.1/Mercearia.AssemblyInfoInputs.cache
+/home/luis/dev/Mercearia/obj/Debug/netcoreapp3.1/Mercearia.AssemblyInfo.cs
+/home/luis/dev/Mercearia/obj/Debug/netcoreapp3.1/Mercearia.csproj.CoreCompileInputs.cache
+/home/luis/dev/Mercearia/obj/Debug/netcoreapp3.1/Mercearia.dll
+/home/luis/dev/Mercearia/obj/Debug/netcoreapp3.1/Mercearia.pdb
+/home/luis/dev/Mercearia/obj/Debug/netcoreapp3.1/Mercearia.genruntimeconfig.cache
