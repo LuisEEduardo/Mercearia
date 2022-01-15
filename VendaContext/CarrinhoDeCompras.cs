@@ -31,10 +31,21 @@ namespace Mercearia.VendaContext
             Itens.Remove(item);
         }
 
-        // public void RemoveParteDoItem(Produto nome, int qtd)
-        // {
-        //     var item = Itens.Where(item => item.Produto.Nome.ToString() == nome);             
-        // }
+         public void AdicionarParteDoItem(string nome, int qtd)
+        {
+            foreach (var produto in Itens.Where(item => item.Produto.Nome == nome))
+            {   
+                produto.AddQtdProduto(qtd); 
+            }            
+        }
+
+        public void RemoveParteDoItem(string nome, int qtd)
+        {
+            foreach (var produto in Itens.Where(item => item.Produto.Nome == nome))
+            {   
+                produto.RemoveQtdProduto(qtd); 
+            }            
+        }
 
     }
 }
