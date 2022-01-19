@@ -13,11 +13,12 @@ namespace Mercearia.VendaContext
         public IList<ItemCarrinho> Itens { get; private set; }
 
         public double ValorCarrinho()
-        {
-            var valorTotal = Itens
-                .Select(item => item.Produto.Preco)
-                .DefaultIfEmpty(0)
-                .Sum();
+        {        
+            double valorTotal = 0; 
+            foreach (var item in Itens)
+            {   
+                valorTotal += item.ValorTotalItem(); 
+            }
             return valorTotal;
         }
 

@@ -18,14 +18,20 @@ namespace Mercearia.VendaContext
             double valorTotal = 0.0;
             foreach (var carrinho in CarrinhosDeCompras)
             {
-                foreach (var item in carrinho.Itens)
-                {
-                    valorTotal += item.ValorTotalItem();
-                }
+                valorTotal += carrinho.ValorCarrinho();
             }
 
             return valorTotal;
         }
 
+        public void AddCarrinho(CarrinhoDeCompras carrinhoDeCompras)
+        {
+            CarrinhosDeCompras.Add(carrinhoDeCompras);
+        }
+
+        public void RemoveCarrinho(CarrinhoDeCompras carrinhoDeCompras)
+        {
+            CarrinhosDeCompras.Remove(carrinhoDeCompras);
+        }
     }
 }
