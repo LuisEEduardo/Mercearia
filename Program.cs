@@ -1,6 +1,9 @@
 ﻿using System;
-using Mercearia.VendaContext;
+using Mercearia.Models.VendaContext;
 using System.Globalization;
+using System.Collections.Generic;
+using Mercearia.Data;
+using Dapper;
 
 namespace Mercearia
 {
@@ -8,26 +11,52 @@ namespace Mercearia
     {
         static void Main(string[] args)
         {
-            Console.Clear();
+            Console.Clear();            
 
-            Produto leite = new Produto("Leite", 5.00, "Leite natural");
-            Produto manga = new Produto("Manga", 2.00, "Manga do pé");
-            Produto melancia = new Produto("Melancia", 10.00, "Melancia da fazenda do Zé");
+            // DbSession _db = new DbSession();
+            // using (var con = _db.Connection)
+            // {
+            //     Console.WriteLine("Hello World");
 
-            ItemCarrinho itemLeite = new ItemCarrinho(leite, 5);
-            ItemCarrinho itemManga = new ItemCarrinho(manga, 10);
-            ItemCarrinho itemMelancia = new ItemCarrinho(melancia, 1);
+            //     var query = @"  SELECT *
+            //                     FROM [Produto]";
 
-            CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
-            carrinho.AddItens(itemLeite);
-            carrinho.AddItens(itemManga);
-            carrinho.AddItens(itemMelancia);
+            //     var produtos = con.Query<Produto>(query);
+            //     foreach (var produto in produtos)
+            //     {
+            //         Console.WriteLine(produto.Preco);
+            //     }
+            // }
 
-            Caixa caixa = new Caixa();
-            caixa.AddCarrinho(carrinho);
 
-            Console.WriteLine($"O valor total das compras: {caixa.ValorTotal().ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))}");
+            // List<Produto> produtosDisponiveis = ProdutosDoDia(); 
+
+            // ItemCarrinho itemLeite = new ItemCarrinho(produto, 5);
+            // ItemCarrinho itemManga = new ItemCarrinho(manga, 10);
+            // ItemCarrinho itemMelancia = new ItemCarrinho(melancia, 1);
+
+            // CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+            // carrinho.AddItens(itemLeite);
+            // carrinho.AddItens(itemManga);
+            // carrinho.AddItens(itemMelancia);
+
+            // Caixa caixa = new Caixa();
+            // caixa.AddCarrinho(carrinho);
+
+            // Console.WriteLine($"O valor total das compras: {caixa.ValorTotal().ToString("C", CultureInfo.CreateSpecificCulture("pt-BR"))}");
 
         }
+
+        // public static List<Produto> ProdutosDoDia()
+        // {
+        //     List<Produto> produtos = new List<Produto>();
+        //     Produto leite = new Produto("Leite", 5.00M, "Leite natural");
+        //     Produto manga = new Produto("Manga", 2.00M, "Manga do pé");
+        //     Produto melancia = new Produto("Melancia", 10.00M, "Melancia da fazenda do Zé");
+        //     produtos.Add(leite);
+        //     produtos.Add(manga);
+        //     produtos.Add(melancia);
+        //     return produtos;
+        // }
     }
 }

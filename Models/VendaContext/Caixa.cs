@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Mercearia.SharedContext;
+using Mercearia.Models.SharedContext;
 
-namespace Mercearia.VendaContext
+namespace Mercearia.Models.VendaContext
 {
     public class Caixa : Base
     {

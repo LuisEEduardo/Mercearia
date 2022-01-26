@@ -1,8 +1,8 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
-using Mercearia.SharedContext;
+using Mercearia.Models.SharedContext;
 
-namespace Mercearia.VendaContext
+namespace Mercearia.Models.VendaContext
 {
     public class ItemCarrinho : Base, IEquatable<ItemCarrinho>
     {

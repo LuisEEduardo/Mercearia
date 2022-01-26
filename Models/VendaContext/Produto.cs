@@ -1,6 +1,7 @@
-using Mercearia.SharedContext;
+using Mercearia.Models.SharedContext;
 
-namespace Mercearia.VendaContext
+namespace Mercearia.Models.VendaContext
+
 {
     public class Produto : Base
     {
@@ -10,6 +11,10 @@ namespace Mercearia.VendaContext
             Nome = nome;
             Preco = preco;
             Descricao = descricao;
+        }
+
+        public Produto()
+        {
         }
 
         public string Nome { get; set; }

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using Mercearia.SharedContext;
+using Mercearia.Models.SharedContext;
 
-namespace Mercearia.VendaContext
+namespace Mercearia.Models.VendaContext
 {
     public class CarrinhoDeCompras : Base
     {

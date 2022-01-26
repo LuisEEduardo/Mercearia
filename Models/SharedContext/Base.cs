@@ -1,6 +1,6 @@
 using System;
 
-namespace Mercearia.SharedContext
+namespace Mercearia.Models.SharedContext
 {
     public abstract class Base
     {
